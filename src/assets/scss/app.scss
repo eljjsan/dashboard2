@@ -3,6 +3,7 @@
 @import 'settings';
 @import 'foundation';
 @import 'motion-ui';
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
 
 @include foundation-global-styles;
 @include foundation-grid;
@@ -48,3 +49,206 @@
 
 @include motion-ui-transitions;
 @include motion-ui-animations;
+
+//my custom style as for now
+
+$bankgreen: #00c974;
+$price: #12a366;
+$cta: #00a1b2;
+$grayish-bottom: #f0f3f4;
+$orange-warning: #fd9811;
+$passive-gray: #c7c7c7;
+$white: #ffffff;
+$gray-title: #707070;
+
+.off-canvas-content{background-color:$grayish-bottom;}
+
+body, h1, h2, h3, h4, h5, h6, p, span{
+	font-family: 'Montserrat', sans-serif;
+	
+}
+
+.vertical  {
+	background-color:$bankgreen;
+
+	li{padding: 8px 5px;}
+	a{color:$white;}
+
+}
+
+
+.top-bar{background:$white;
+	li{
+		display:inline-block;
+	}
+	ul{
+		background:$white;}
+	}
+.top-bar-section{
+
+		li{
+		padding-right:18px;
+	}
+		a{color:$bankgreen;}
+
+		.grayish
+		{
+			a{color:$gray-title;}
+			span{font-size:12px;}
+		}
+
+		.divider:before {
+	    content:" ";
+	    margin:0 -15px;
+	    position: absolute;
+	    top: 0;
+	    bottom: 0;
+	    width: 1px;
+	    background: #666666;
+  		}
+
+}
+
+.menu-icon{color:$bankgreen;}
+
+
+h2{
+	color: $price;
+}
+
+
+
+h4.sub-title{
+	color:#757575;
+	    line-height: 0.5;
+	    font-size:17px;
+	    padding-top:10px;
+}
+
+
+
+
+.button.secondary{
+			color: $white;
+	}
+
+.callout{
+    border: 1px solid rgba(230, 231, 232, 0.8);
+}
+
+
+.title-dashboard{
+	padding-top:15px;
+	.button{
+		background: $bankgreen;
+
+
+	}
+}
+
+
+.callout.card{
+
+		h3{
+			background-color:$white;
+			font-size:20px;
+			color:#454545;
+		}
+
+		h4{
+		    background-color:$white;
+		    font-size:16px;
+		}
+		h5{
+		    background-color:$white;
+		}
+
+		b{color:$price;
+			font-weight:normal;}
+
+		.button{
+			width:100%;
+			background-color: $cta;
+
+		}
+		
+		.fact {
+			span{font-size:32px;
+			}
+			.number-budget{color:$price;}
+			.number-cost{color:$cta;}
+		}
+
+		.amountbill-content{
+			
+			span{
+				font-size: 50px;
+				color: $price;
+				}
+		}
+		.challenge-content{
+			h4 {
+				color: $price;
+				font-size:25px;
+			}
+			
+		}
+
+		.outages-content{
+			span{
+				color: #A1A1A1;
+			}
+		}
+		background-color: $white;
+		padding:20px;
+
+		.emission-content{
+			h5{font-size:17px;}
+			span{font-size:25px;}
+		}
+	
+}
+
+aside {
+  transition: transform 500ms ease 0s;
+}
+.offcanvas-overlap aside {
+  -ms-transform: none;
+  -webkit-transform: none;
+  -moz-transform: none;
+  -o-transform: none;
+  transform: none;
+  z-index: 1003;
+}
+.offcanvas-overlap .exit-off-canvas{
+  -ms-transition: #000 300ms ease 0s;
+  -webkit-transition: #000 300ms ease 0s;
+  -moz-transition: #000 300ms ease 0s;
+  -o-transition: #000 300ms ease 0s;
+  transition: #000 300ms ease 0s;
+  cursor: pointer;
+  box-shadow: -4px 0px 4px rgba(0, 0, 0, 0.5), 4px 0px 4px rgba(0, 0, 0, 0.5);
+  display: block;
+  position: absolute;
+  background: none repeat scroll 0% 0% rgba(255, 255, 255, 0.2);
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  z-index: 1002;
+}
+
+	
+.avatar {
+    float: left;
+    margin-right: 1em;
+    position: relative;
+
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+
+    -webkit-box-shadow: 0 0 0 3px #fff, 0 0 0 4px #999, 0 2px 5px 4px rgba(0,0,0,.2);
+    -moz-box-shadow: 0 0 0 3px #fff, 0 0 0 4px #999, 0 2px 5px 4px rgba(0,0,0,.2);
+    box-shadow: 0 0 0 3px #fff, 0 0 0 4px #999, 0 2px 5px 4px rgba(0,0,0,.2);
+}
